@@ -1,0 +1,40 @@
+#display {
+    background-color:aqua;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 23px #0a0a0a;
+}
+
+#countdown {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left:25%;
+    display:flex;
+    flex-direction: column;
+}
+
+.number {
+   font-size: 10vh;
+   color:white;
+   background-color: black;
+   border-radius: 10px;
+}
+
+#userInterface {
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 2.5vh;
+    color: rgba(119, 0, 255, 0.998);
+}
+
+#heading {
+    text-align: center;
+    font-size: 5vh;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<div id="countdown">
+    <div id="heading">Time remaining: </div>
+    <div id="display">
+        <div id="days">
+            <span class="number">00</span>
+            <span class="text">Days</span>
+        </div>
+        <div id="hours">
+            <span class="number">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div id="minutes">
+            <span class="number">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div id="seconds">
+            <span class="number">00</span>
+            <span class="text">Seconds</span>
+        </div>
+    </div>
+    <div id="userInterface">
+        <div id="inputDate">
+            <p id="input-warning"></p>
+            <p>Please input your future event date and time in the format of "YYYY-MM-DD HH:mm:ss".</p>
+            <input type="text" id="input-date">
+            <button type="submit" id="input-submit">Submit</button>
+        </div>
+        <div id="optionDate">
+            <p>Or select your date and time for your future event.</p>
+            <label for="year">Year: </label>
+            <select id="year">
+                <option value="default">----</option>
+            </select>
+            <label for="month">Month: </label>
+            <select id="month">
+                <option value="default">--</option>
+            </select>
+            <label for="day">Day: </label>
+            <select id="day">
+                <option value="default">--</option>
+            </select>
+            <label for="hour">Hour: </label>
+            <select id="hour">
+                <option value="default">--</option>
+            </select>
+            <label for="minute">Minute: </label>
+            <select id="minute">
+                <option value="default">--</option>
+            </select>
+            <button type="submit" id="option-submit">Submit</button>
+        </div>
+    </div>
+
+</div>
+
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/arraySupport.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/customParseFormat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js"></script>
+    <script>dayjs().format()</script>
+    <script src="script.js"></script>
+</body>
+
+</html>
